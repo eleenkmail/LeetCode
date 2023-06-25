@@ -5,10 +5,18 @@ class Solution(object):
         :rtype: int
         """
 
-        i = 0 
-        j = i+1
+        i = j = 0 
+       
+        while j<len(nums):
+            if nums[i] == nums[j]:
+                j+=1
+            else:
+                i+=1
+                nums[i] = nums[j]
 
-        nums_set = set(nums)
-        nums[:len(nums_set)-1] = sorted(list(nums_set))
+        return i+1
+                
+                       
 
-        return len(nums_set)
+       
+        
