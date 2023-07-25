@@ -29,10 +29,8 @@ class Solution(object):
             curr.next = prev
             prev = curr
             curr = temp 
-            
-        while prev:
-            print(first.val)
-            print(prev.val)
+
+        while prev: 
             if first.val != prev.val:
                 return False
 
