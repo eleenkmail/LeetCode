@@ -15,7 +15,7 @@ class Solution(object):
 
             n = summ
 
-            print(n)
+            
 
             if n == 1:
                 return True
