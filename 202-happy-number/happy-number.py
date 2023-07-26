@@ -15,7 +15,6 @@ class Solution(object):
 
             n = summ
 
-            
 
             if n == 1:
                 return True
